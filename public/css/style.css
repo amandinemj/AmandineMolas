@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+div{
+
+    /* border: 1px solid black; */
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+}
+
+.element_lateral, .element_central{
+    display: flex;
+    flex-direction: column;
+}
+
+.element_lateral{
+    width: 30%;
+    background-color: #12485D;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.3;
+    
+}
+
+a{
+    color: white;
+}
+
+.ma_presentation{
+    background-color: #9BC2D1;
+}
+
+img{
+    width: 70%;
+    border-radius: 50%;
+}
+
+.photo{
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+
+.mes_competences, .techniques, .mes_qualites, .mes_coordonnees{
+    width:100%;
+    text-align: start;
+    margin-bottom: 15px;
+
+}
+
+.techniques, .relationnelles, .mes_qualites li, .mes_coordonnees li{
+    margin-left: 15px;
+}
+
+.titre_section_lateral{
+    text-transform:uppercase;
+    font-size: large;
+}
+.element_central{
+    width: 80%;
+}
