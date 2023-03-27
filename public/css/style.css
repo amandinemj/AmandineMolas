@@ -3,6 +3,49 @@
     border: 1px solid black;
 } */
 
+/* Page d'accueil */
+
+header{
+    display: flex;
+    height: 30px;
+    background-color: #f4ece4;
+    align-items: center;
+    justify-content: center;
+}
+.message_bienvenue{
+    color:black;
+    text-align: center;
+
+}
+
+nav{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav a{
+    margin:15px;
+    text-decoration:none;
+    transition: 0.5s;
+    color:black;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color:black;
+}
+
+nav a:visited{
+    color:black;
+}
+
+.header_cv{
+    background-color: white;
+}
+
+/*Mon CV*/
 *{
     box-sizing: border-box;
     margin:0px;
