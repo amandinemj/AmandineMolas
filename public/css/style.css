@@ -163,8 +163,10 @@ img{
     width: 800px;
     height: 400px;
 }
-.mes_interets img{
-    width:80px;
+
+#droite, #gauche{
+    font-size: 65px;
+    margin:15px;
 }
 
 .bouton_carroussel{
