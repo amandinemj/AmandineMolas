@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <div class="element_lateral">
-            <div class="photo">
+            <div class="ma_photo">
                 <img src="./public/img/ma_photo_cv.jpeg" alt="photo de cv">
             </div>
             <div class="mes_competences">
@@ -81,25 +81,25 @@
                 </div>
             </div>
             <div class="ma_formation">
-                Formation
-                <div class="openclassrooms">
+                <p>Formation</p>
+                <div class="ma_formation_opc">
                     <div class="colonne_date">
                         2022-en cours
                     </div> 
                     <div class="colonne_contenu">
                         OpenClassrooms - Parcours développement web<br>
                         Diplôme de niveau 5 (RNCP) - Bac +2<br>
-                        Missions en cours d'apprentissage :<br>
+                        <ul>Missions en cours d'apprentissage :<br>
                         <li>Construction de site web responsive et dynamique</li>
                         <li>Création d'API et de bases de données</li>
                         <li>Optimisation des performances</li>
                         <li>Maintenance de sites web déjà existants</li>
                         <li>Gestion d'un projet web depuis la planification jusqu'à la présentation au client.</li>
-                        <li>Rédaction des spécifications techniques</li>
+                        <li>Rédaction des spécifications techniques</li></ul>
                         A la fin de la formation, je maitriserai HTML, CSS, JS, React, Git/Github, NodeJS, Express, MongoDB et les API REST.
                     </div>
                 </div>
-                <div class="kinesitherapie">
+                <div class="ma_formation_kine">
                     <div class="colonne_date">
                         2014-2018
                     </div> 
@@ -108,7 +108,7 @@
                         Université de Gérone
                     </div>
                 </div>
-                <div class="baccalaureat">
+                <div class="ma_formation_bac">
                     <div class="colonne_date">
                         2013
                     </div> 
@@ -119,13 +119,85 @@
             </div>
             <div class="mon_experience">
                 <p>Expériences et projets professionnels</p>
-                <div class="colonne_date"></div> 
-                <div class="colonne_contenu"></div>
+                <div class="mon_experience_opc">
+                    <div class="colonne_date">
+                        2023-en cours
+                    </div>
+                    <div class="colonne_contenu">
+                        Création d'une page d'agence de voyage avec HTML et CSS<br>
+                        Création d'une page web avec JavaScript<br>
+                        Plafinication du développement du site web via agile<br>
+                        Débogage et optimisation d'un site de photographe<br>
+                        Création d'une application web de location immobilière avec React<br>
+                        Développement du back-end d'un site de notation de livres<br>
+                    </div>
+                </div>
+                <div class="mon_experience_kine">
+                    <div class="colonne_date">
+                        2018-2022 
+                    </div>
+                    <div class="colonne_contenu">
+                        Kinésithérapeute libérale
+                    </div>
+                </div>
             </div>
             <div class="mes_interets">
-                Centres d'intérêt
+                <p>Centres d'intérêt</p>
+                <div id="carroussel">
+                    <div id="carroussel_container">
+                    </div>
+                    <img src="./public/img/circle-right-regular.svg" class="bouton_carroussel" id="droite"/>
+                    <img src="./public/img/circle-right-regular.svg" class="bouton_carroussel" id="gauche"/>
+                </div>
             </div>
         </div>
     </div>
+    <script>
+        document.body.onload=function(){
+            nbr=4;
+            p=0;
+            container=document.getElementById("carroussel_container");
+            gauche=document.getElementById("gauche");
+            droite=document.getElementById("droite");
+            container.style.width=(800*nbr)+"px";
+            for(i=1; i<=nbr; i++){
+                div=document.createElement("div");
+                div.className="photo";
+                div.style.backgroundImage="url('./public/img/image"+i+".png')";
+                container.appendChild(div);
+            }
+            afficherMasquer();
+        }
+        droite.onclick=function(){
+            if(p>-nbr+1)
+                p--;
+            container.style.transform="translate("+(p*800)+"px)";
+            container.style.transition="all 0.5s ease";
+            afficherMasquer();
+        }
+
+        gauche.onclick=function(){
+            if(p<0)
+                p++;
+            container.style.transform="translate("+(p*800)+"px)";
+            container.style.transition="all 0.5s ease";
+            afficherMasquer();
+        }
+
+        function afficherMasquer(){
+            if (p===-nbr+1){
+                droite.style.visibility = "hidden";
+            }
+            else{
+                droite.style.visibility = "visible";
+            }
+            if (p===0){
+                gauche.style.visibility = "hidden";
+            }
+            else{
+                gauche.style.visibility = "visible";
+            }
+        }
+    </script>
 </body>
 </html>
