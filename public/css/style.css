@@ -135,10 +135,6 @@ img{
     text-shadow: 5px 5px 25px #12485D
 }
 
-.mon_nom:hover{
-    
-}
-
 .rapide_presentation{
     width: 80%;
     margin: auto;
@@ -254,3 +250,6 @@ img{
     display: inline-block;
     background-size: cover;
 }
+
+/* Mon Javascript */
+
