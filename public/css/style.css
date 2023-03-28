@@ -252,6 +252,12 @@ img{
 }
 
 /* Mon Javascript */
+
+.titreMonJavascript{
+    margin:20px;
+    text-align: center;
+}
+
 .container_fleurs{
     display:flex;
     flex-direction: row;
@@ -266,14 +272,21 @@ img{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 4px;
+    
 }
 .fiches article {
 	border: 1px solid black;
 	padding: 4px;
+    display: flex;
+    flex-direction:column;
+
 }
 .fiches img {
 	width: 200px;
     height: 200px;
+    align-self: center;
+    
+    
 }
 
 .fiches p {
@@ -283,4 +296,22 @@ img{
 
 .fiches article h2 {
 	text-align: center;
+}
+
+.filtres{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-left : 15px;
+    margin-right: 15px;
+}
+
+button{
+    transition: all 0.3s;
+    height: 50px;
+}
+
+button:hover{
+    letter-spacing: 2px;
+
 }
