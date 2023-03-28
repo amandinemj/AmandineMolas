@@ -252,4 +252,35 @@ img{
 }
 
 /* Mon Javascript */
+.container_fleurs{
+    display:flex;
+    flex-direction: row;
+}
+.filtres{
+    min-width:300px;
+}
 
+.fiches {
+	flex: 1;
+	margin: 8px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 4px;
+}
+.fiches article {
+	border: 1px solid black;
+	padding: 4px;
+}
+.fiches img {
+	width: 200px;
+    height: 200px;
+}
+
+.fiches p {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.fiches article h2 {
+	text-align: center;
+}

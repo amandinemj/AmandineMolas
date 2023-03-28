@@ -1,0 +1,51 @@
+[
+    {
+        "id":1,
+        "nom": "Tulipes",
+        "saison" : "Hiver",
+        "prix": 10,
+        "image": "./public/img/tulipes.jpg",
+        "description":"Les tulipes forment un genre de plantes herbacées de la famille des Liliacées, qui compte une centaine d'espèces originaires des régions tempérées chaudes de l'Ancien Monde. Plusieurs espèces sont largement cultivées comme plantes ornementales et ont donné lieu à la création de plusieurs milliers de variétés.",
+        "disponibility":true
+    },
+
+    {
+        "id":2,
+        "nom": "Roses",
+        "saison" : "Ete",
+        "prix": 15,
+        "image": "./public/img/roses.jpg",
+        "description":"La rose est la fleur du rosier, arbuste du genre Rosa et de la famille des Rosaceae. La rose des jardins se caractérise avant tout par la multiplication de ses pétales imbriqués, qui lui donne sa forme caractéristique.",
+        "disponibility":true
+    },
+
+    {
+        "id":3,
+        "nom": "Rononcules",
+        "saison" : "Hiver",
+        "prix": 20,
+        "image": "./public/img/rononcules.jpg",
+        "description":"Les renoncules sont des plantes herbacées, annuelles ou vivaces, de la famille des Ranunculaceae. Elles comportent près de 500 espèces mais Ranunculus auricomus comprend un ensemble très complexe de 800 taxons apomictiques, auxquels certains botanistes ont donné le rang d'espèces ou de micro-espèces.",
+        "disponibility":false
+    },
+
+    {
+        "id":4,
+        "nom": "Pivoines",
+        "saison" : "Printemps",
+        "prix": 15,
+        "image": "./public/img/pivoines.jpg",
+        "description":"Les pivoines sont connues par une quarantaine d'espèces de plantes vivaces, herbacées, ou arbustives. Les feuilles sont vert tendre ou foncé, quelquefois argentées. Les fleurs peuvent être parfumées, dressées et solitaires ou en forme de coupe ou de boule.",
+        "disponibility":true
+    },
+
+    {
+        "id":5,
+        "nom": "Gypsophiles",
+        "saison" : "Ete",
+        "prix": 15,
+        "image": "./public/img/gypsophiles.jpg",
+        "description":" Plante herbacée ou petit arbuste de la famille des Caryophyllacées supportant les terrains très gypseux, à feuilles sessiles opposées, généralement à fleurs blanches.",
+        "disponibility":true
+    }
+]
