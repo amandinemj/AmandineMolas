@@ -207,7 +207,7 @@ img{
     height: 400px;
 }
 
-#droite, #gauche{
+#right, #left{
     font-size: 65px;
     margin:15px;
 }
@@ -219,28 +219,28 @@ img{
     top:150px;
 }
 
-#gauche{
+#left{
     left:5px;
     opacity:0.4;
     transform:rotate(180deg);
     transition:all 0.3s ease;
 }
 
-#droite{
+#right{
     right:5px;
     opacity:0.4;
     transform:rotate(0deg);
     transition:all 0.3s ease;
 } 
 
-#gauche:hover{
+#left:hover{
     transform: scale(1.1);
     opacity: 1;
     transform:rotate(180deg);
     transition:all 0.3s ease;
 }
 
-#droite:hover{
+#right:hover{
     transform: scale(1.1);
     opacity: 1;
     transform:rotate(0deg);

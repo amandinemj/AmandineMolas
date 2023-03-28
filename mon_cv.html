@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,900i" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="./public/font/css/all.css">
+    <script src="./public/js/carroussel.js">
+        
+    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
     </style>
@@ -14,7 +17,7 @@
 </head>
 <body>
     <header class="header_cv">
-        Si vous souhaitez télécharger mon CV au format PDF, <a href="./CV_MOLAS_Amandine_Bleu.pdf" title="Pdf" target="_blank">cliquez ici</a>.
+        Si vous souhaitez télécharger mon CV au format PDF, <a href="./CV_MOLAS_Amandine_Bleu.pdf" download="CV_MOLAS_Amandine" title="Pdf" target="_blank">cliquez ici</a>.
     </header>
     <div class="container">
         <div class="element_lateral">
@@ -149,59 +152,13 @@
                 <div id="carroussel">
                     <div id="carroussel_container">
                     </div>
-                    <i class="fa-solid fa-circle-right fa-rotate-180 bouton_carroussel" id="droite" style="color: #ffffff;"></i>
-                    <i class="fa-solid fa-circle-right fa-rotate-0 bouton_carroussel" id="gauche" style="color: #ffffff;"></i>
-                    <!-- <img src="./public/img/circle-right-regular.svg" class="bouton_carroussel" id="gauche"/> -->
+                    <i class="fa-solid fa-circle-right fa-rotate-180 bouton_carroussel" id="right" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-circle-right fa-rotate-0 bouton_carroussel" id="left" style="color: #ffffff;"></i>
+                    <!-- <img src="./public/img/circle-right-regular.svg" class="bouton_carroussel" id="left"/> -->
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        document.body.onload=function(){
-            nbr=4;
-            p=0;
-            container=document.getElementById("carroussel_container");
-            gauche=document.getElementById("gauche");
-            droite=document.getElementById("droite");
-            container.style.width=(800*nbr)+"px";
-            for(i=1; i<=nbr; i++){
-                div=document.createElement("div");
-                div.className="photo";
-                div.style.backgroundImage="url('./public/img/image"+i+".png')";
-                container.appendChild(div);
-            }
-            afficherMasquer();
-        }
-        droite.onclick=function(){
-            if(p>-nbr+1)
-                p--;
-            container.style.transform="translate("+(p*800)+"px)";
-            container.style.transition="all 0.5s ease";
-            afficherMasquer();
-        }
-
-        gauche.onclick=function(){
-            if(p<0)
-                p++;
-            container.style.transform="translate("+(p*800)+"px)";
-            container.style.transition="all 0.5s ease";
-            afficherMasquer();
-        }
-
-        function afficherMasquer(){
-            if (p===-nbr+1){
-                droite.style.visibility = "hidden";
-            }
-            else{
-                droite.style.visibility = "visible";
-            }
-            if (p===0){
-                gauche.style.visibility = "hidden";
-            }
-            else{
-                gauche.style.visibility = "visible";
-            }
-        }
-    </script>
+    
 </body>
 </html>
