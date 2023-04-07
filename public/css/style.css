@@ -41,7 +41,18 @@ nav a:visited{
     color:black;
 }
 
+.logo{
+    width:200px;
+    height: 200px;
+}
 
+a[title=accueil], a[title="wordpress"], a[title="mon_javascript"]{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap : 15px;
+}
 
 /*Mon CV*/
 
@@ -101,7 +112,7 @@ a[title="mon_linkedin"]:visited{
     background-color: #9BC2D1;
 }
 
-img{
+.ma_photo{
     width: 90%;
     border-radius: 50%;
 }
@@ -334,4 +345,10 @@ button{
 button:hover{
     letter-spacing: 2px;
 
+}
+
+/*Mes wordpress*/
+
+.container_wordpress{
+    text-align: center;
 }
