@@ -352,3 +352,22 @@ button:hover{
 .container_wordpress{
     text-align: center;
 }
+
+/* Mon utilisation API */
+
+#mon_container_chien_image{
+    width: 500px;
+    height: 500px;
+}
+
+#mon_container_chien_image img{
+    width: 100%;
+    object-fit: cover;
+
+}
+
+#mon_container_chien_titre_image_bouton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
