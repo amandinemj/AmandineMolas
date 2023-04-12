@@ -11,11 +11,23 @@
 </head>
 <body>
     <div id="mon_container_chien_titre_image_bouton">
-        <h1>Mon chien</h1>
-        <div id="mon_container_chien_image">
-            <img id="image-chien" src="" alt="">
+        <h1>API Chien</h1>
+        
+        <div class="container_random_dog">
+            <img id="image-random-chien" src="" alt="">
+            <button id="random">Random !</button>
         </div>
-        <button id="fetch-dog">Wouf !</button>
+        
+        <div class="container_search_dog">
+            <label for="name">Quel race de chien voulez-vous voir :</label>
+            <input type="text" id="name_dog" name="name_dog" required
+                minlength="2" maxlength="20" size="10"></h2>
+            <div id="mon_container_chien_image">
+                <img id="image-chien" src="" alt="">
+            </div>
+            <button id="fetch-dog">Wouf !</button>
+        </div>
+        
     </div>
 </body>
 </html>

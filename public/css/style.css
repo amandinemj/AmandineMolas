@@ -355,19 +355,25 @@ button:hover{
 
 /* Mon utilisation API */
 
-#mon_container_chien_image{
-    width: 500px;
-    height: 500px;
+#mon_container_chien_titre_image_bouton{
+    width:1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    text-align: center;
+    margin:auto;
 }
 
-#mon_container_chien_image img{
+.container_random_dog, .container_search_dog{
+    width: 100%;
+    margin: 25px;
+}
+
+
+#image-chien, #image-random-chien{
     width: 100%;
     object-fit: cover;
+    margin:25px;
 
 }
 
-#mon_container_chien_titre_image_bouton{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
